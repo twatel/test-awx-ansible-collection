@@ -1,0 +1,7 @@
+- name: "Install apache Web server"
+  hosts: web
+  become: true
+  gather_facts: true
+
+  roles:
+    - ansible-role-apache
